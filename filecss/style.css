@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+header {
+    width: 100%;
+    height: max-content;
+    /* bạn chỉnh chiều cao theo ý */
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ảnh phủ kín 2 đầu, không để khoảng trống */
+}
+
+.container {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 20px;
+}
+
+header img {
+    height: max-content;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Thanh navbar */
+
+.navbar {
+    background: #004080;
+    /* màu nền đậm hơn */
+    padding: 0;
+    font-size: 14px;
+    /* chữ nhỏ lại */
+}
+
+
+/* Menu chính */
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu>li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px 15px;
+    /* khoảng cách nhỏ hơn */
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+    /* giữ chữ trên 1 dòng */
+    font-size: 13px;
+    /* thu nhỏ chữ */
+}
+
+.nav-menu a:hover {
+    background: #0066cc;
+}
+
+
+/* Dropdown menu */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 8px 12px;
+    font-size: 13px;
+    /* chữ con nhỏ gọn */
+}
+
+.dropdown-menu a:hover {
+    background: #f2f2f2;
+    color: #004080;
+}
+
+
+/* Hiện menu khi hover */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Ô tìm kiếm */
+
+.search-field {
+    padding: 5px 8px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.title {
+    background: #0056a3;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background: #fafafa;
+    border-radius: 4px;
+}
+
+.news-item b {
+    color: #333;
+}
+
+.news-item a {
+    color: red;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #0056a3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer img {
+    height: 100px;
+    margin: 10px;
+}
